@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  reply_from_email: MyString
+  reply_string: MyString
+  post_id: 1
+
+two:
+  reply_from_email: MyString
+  reply_string: MyString
+  post_id: 1

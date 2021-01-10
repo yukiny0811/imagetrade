@@ -1,0 +1,12 @@
+<h1>AllPosts#show</h1>
+<% for p in @posts %>
+  <div class="postContainer">
+    <h3><%= p.title %></h3>
+    <p><%= p.description %></p>
+    <% if p.user.id == current_user.id %>
+      <p>*you can't reply to yourself</p>
+    <% else %>
+      <a href="/replies/new?id=<%= p.id %>">reply</a>
+    <% end %>
+  </div>
+<% end %>

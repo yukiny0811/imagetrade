@@ -1,0 +1,8 @@
+<h1>UserTops#show</h1>
+<% for p in @posts %>
+  <div style="margin: 5px; padding:5px; background-color:rgb(255, 255, 200);">
+    <h3><%= p.title %></h3>
+    <p><%= p.description %></p>
+    <a href="/reply_to_posts_list/show?post_id=<%= p.id %>">show replies</a>
+  </div>
+<% end %>
