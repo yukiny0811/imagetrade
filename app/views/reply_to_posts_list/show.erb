@@ -4,7 +4,7 @@
     <p>replied on <%= r.created_at %></p>
     <p><%= r.reply_string %></p>
     <form action="/match" method="post">
-      <input type="text" name="reply_id" value="<%= r.id %>">
+      <input type="text" name="reply_id" value="<%= r.id %>" style="display:none;">
       <input type="submit" value="match">
     </form>
   </div>

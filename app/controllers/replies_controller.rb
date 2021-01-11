@@ -13,6 +13,8 @@ class RepliesController < ApplicationController
     ist2 = Imagestorage.new(user_id: rep.id_of_user, url: url_for(rep.post.photo))
     ist2.save
     
+    rep.post.destroy
+    
     redirect_to '/welcome/index'
   end
 
